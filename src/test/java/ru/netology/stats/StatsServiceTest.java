@@ -15,4 +15,14 @@ class StatsServiceTest {
         assertEquals(expected, actual);
 
     }
+
+    @Test
+    void calculateMiddleSum() {
+        StatsService1 service = new StatsService1();
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long expected = 15;
+        long actual = service.calculateMiddleSum(sales);
+
+        assertEquals(expected, actual);
+    }
 }
