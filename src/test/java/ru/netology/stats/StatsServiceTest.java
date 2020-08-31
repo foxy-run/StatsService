@@ -1,28 +1,35 @@
 package ru.netology.stats;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
 
 class StatsServiceTest {
 
     @Test
     void calculateSum() {
-        StatsService service = new StatsService();
-        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        long expected = 180;
-        long actual = service.calculateSum(sales);
 
-        assertEquals(expected, actual);
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        StatsService service = new StatsService();
+        System.out.println(service.calculateSum(sales));
 
     }
+
 
     @Test
     void calculateMiddleSum() {
         StatsService1 service = new StatsService1();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        long expected = 15;
-        long actual = service.calculateMiddleSum(sales);
-
-        assertEquals(expected, actual);
+        System.out.println(service.calculateMiddleSum(sales));
     }
+
+
+    @Test
+    void calculateFindMax() {
+
+        StatsService2 service = new StatsService2();
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+
+        System.out.println(service.calculateFindMax(sales));
+    }
+
+
 }
