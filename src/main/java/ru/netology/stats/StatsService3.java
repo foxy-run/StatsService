@@ -2,14 +2,25 @@ package ru.netology.stats;
 
 public class StatsService3 {
     public long calculateFindMin(long[] sales) {
-        long currentMax = sales[0];
+        long result = 0;
+        long month = 0;
+long min = sales[0];
+        for (long i : sales) {
 
-        for (long sale : sales) {
-            if (currentMax > sale) {
-
-                currentMax = sale;
+            if (i < min) {
+                min = i;
             }
         }
-        return currentMax;
+            for (long i : sales) {
+            month++;
+            if (i == min) {
+                result = month;
+
+            }
+
+
+        }
+
+        return result;
     }
 }
