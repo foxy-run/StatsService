@@ -20,7 +20,7 @@ class StatsServiceTest {
     @Test
     void calculateMiddleSum() {
 
-        StatsService1 service = new StatsService1();
+        StatsService service = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expected = 15;
         long actual = service.calculateMiddleSum(sales);
@@ -31,7 +31,7 @@ class StatsServiceTest {
     @Test
     void calculateFindMax() {
 
-        StatsService2 service = new StatsService2();
+        StatsService service = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expected = 8;
         long actual = service.calculateFindMax(sales);
@@ -41,7 +41,7 @@ class StatsServiceTest {
     @Test
     void calculateFindMin() {
 
-        StatsService3 service = new StatsService3();
+        StatsService service = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expected = 9;
         long actual = service.calculateFindMin(sales);
@@ -50,7 +50,7 @@ class StatsServiceTest {
     @Test
     void calculateSalesDown() {
 
-        StatsService4 service = new StatsService4();
+        StatsService service = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expected = 5;
         long actual = service.calculateSalesDown(sales);
@@ -59,7 +59,7 @@ class StatsServiceTest {
     @Test
     void calculateSalesUp() {
 
-        StatsService5 service = new StatsService5();
+        StatsService service = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expected = 5;
         long actual = service.calculateSalesUp(sales);
